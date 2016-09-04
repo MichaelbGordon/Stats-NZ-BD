@@ -25,18 +25,19 @@ BD2015 <- BD2015 %>%
 
 
 # 4 Digit ANZSIC at Regional Council
-RC_4D <- BD2015%>%   
+RC_4D <- BD2015 %>%   
          filter(AREA_TYPE == "R", ANZSIC_Level == "4")
+write.csv(RC_4D, "RC_4D.csv")
 
 # 3 Digit ANZSIC at Regional Council
-RC_3D <- BD2015%>%   
-  filter(AREA_TYPE == "R", ANZSIC_Level == "3")
-
+RC_3D <- BD2015 %>%   
+         filter(AREA_TYPE == "R", ANZSIC_Level == "3")
+write.csv(RC_3D, "RC_3D.csv")
 
 # 1 Digit ANZSIC at Regional Council
-RC_1D <- BD2015%>%   
-  filter(AREA_TYPE == "R", ANZSIC_Level == "1")
-
+RC_1D <- BD2015 %>%   
+         filter(AREA_TYPE == "R", ANZSIC_Level == "1")
+write.csv(RC_1D, "RC_1D.csv")
 
 
 
